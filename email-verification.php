@@ -1,0 +1,80 @@
+<?php
+    require_once("./Php/helper/error-pageHF.php");
+    $classErrorPage = new classErrorPage();
+
+    $classErrorPage->signUpEmailVerification();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Email</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./Css/scss/style.css">
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <!-- Rotate Phone -->
+    <div class="phone-container ney-flex ney-flex-fd-c-ai-c-jc-c ney-z-index-3">
+        <div class="phone"></div> <br>
+        <div><p>Please Rotate your Phone</p></div>
+    </div>
+
+    <!-- Start Login Container-->
+    <div class="background-body-container ney-flex ney-flex-ai-c-jc-c">
+        <div class="ney-form ney-flex ney-flex-fd-c-ai-c ney-parent-container">
+            <!-- Error Container -->
+            <div id="verifyCodeError" class="ney-z-index-1"></div>
+
+            <div class="ney-child-container ney-flex ney-flex-fd-c ney-form-input-container">
+                <!-- Title -->
+                <div class="title-container">
+                    <h4 class="ney-text-color-black">Verification Email</h4>
+                </div>
+
+                <div style="text-align:end">
+                    <span id="countResendCode" style="color:black"></span>
+                    <button id="resendCode" class="ney-form-btn">Resend Code</button>
+                </div>
+
+                <!-- Start of Form Email Verify -->
+                <form id="emailVerifyForm">
+                    <!-- Verification and Resend Code -->
+                    <div class="ney-form-input-parent-container">
+                        <input class="ney-form-input-text" type="text" id="verificationCode" placeholder="Verification Code" style="padding-right: 100px !important;" required>                        
+                    </div>
+
+                    <!-- Loader -->
+                    <div id="signUploader" class="ney-flex ney-flex-ai-c ney-margin-tb-8" style="display: none;">
+                        <div class="ney-loader"></div>
+                        <span class="ney-margin-l-4" style="color:black"><b>Loading...</b></span>
+                    </div>
+
+                    <!-- Btn Submit -->
+                    <div class="btn-container ney-text-center">
+                        <input class="ney-btn ney-text-size-xlarge" type="submit" value="Submit">
+                    </div>
+                </form> <!-- End of Form Email Verify -->
+
+                <div class="nav-form">
+                    <a class="ney-text-color-black ney-text-size-small" href="login.php">Back to Login</a> <br>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Login Container-->
+    
+    <!-- Function -->
+    <script src="./Javascript/function-js/form-error-close-btn.js"></script>
+
+    <!-- Ajax Js -->
+    <script src="./Javascript/ajax/signup-verifiy-email.js"></script>
+    <script src="./Javascript/ajax/signup-resend-code.js"></script>
+</body>
+</html>
