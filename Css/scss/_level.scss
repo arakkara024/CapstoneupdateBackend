@@ -1,0 +1,375 @@
+.level-container{
+    width: 100%;
+}
+
+.level-top-container,.level-bottom-container{
+    height: 50vh;
+    position: relative;
+}
+
+.level-top-container{
+    width: 100%;
+    background: url(http://localhost/capstone3/images/interace-bg/battle-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100%;
+}
+
+.level-timer-container{
+    width: 16.68%;
+    background-color: $ney-orange;
+    border-radius: 25px;
+    border: 3px solid $ney-brown;
+    padding:8px;
+    
+    h4{
+        font-size:36px !important;
+    }
+}
+
+.level-character-container{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    img{
+        height: 70px;
+    }
+}
+
+.level-health{
+    position: relative;
+    border: 1px solid $ney-black;
+    background-color: rgba(236, 169, 169, 0.948);
+    border-radius: 20px;
+    height: 20px;
+    width: 138px;
+}
+
+.enemy-life-bar, .arvi-life-bar {
+    width: 99%;
+    height: 100%;
+    margin-left: 1px;
+    background-color: rgb(13, 222, 13);
+    // align-self: center;
+    font-family: sans-serif;
+    border-radius: 20px;
+    transition: width ease-in-out 2s;
+}
+
+.arvi-life-text, .enemy-life-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: none;
+    font-family: sans-serif;
+    z-index: 2;
+    color: $ney-black;
+}
+
+.level-ide, .level-out{
+    background-color: $ney-orange;
+    width: 41.66%;
+    height: 100%;
+    border: 10px solid $ney-brown;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.question-div {
+    width: 100%;
+    height: 60%;
+}
+
+.question-text{
+    font-size: 12px;
+}
+
+.button-div {
+    width: 100%;
+    height: 40%;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+.option1, .option2, .option3 {
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 53%;
+    font-family: sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    border-radius: 20px; 
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: flex;
+}
+
+.question-answer-text {
+    width: 100%;
+    height: 100%;
+}
+
+.span1,.span2 {
+    background-color: rgb(198, 198, 198);
+    border: 1px solid black;
+    width: 20px;
+    height: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    padding: 2px 5px;
+}
+
+
+.level-container-option{
+    display: none;
+    height: 100%;
+    width: 16.68%;
+    background: url(http://localhost/capstone3/images/interace-bg/body-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    button{
+        width: 100%;
+        background-image: url(http://localhost/capstone3/images/icons/button.png);
+        background-size: 100% 100%;
+        padding: 10px;
+        border: none;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: bolder;
+        color: $ney-white;
+        cursor: pointer;
+    }
+}
+
+// Lecture Styles (Zyla's CSS)
+.lecture-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.681);
+    z-index: 10;
+}
+
+.script-container {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.script {
+    width: 70%;
+    height: 90%;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    padding: 10px;
+    border: 2px solid rgb(187, 81, 5);
+    color: white;
+    background-color: rgb(249, 158, 93);
+    text-align: justify;
+}
+
+.proceed-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.next-btn{
+    width: 70%;
+    height: 40%; 
+    color: white;
+    cursor: pointer;
+    background-image: url(http://localhost/capstone3/images/icons/button.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    letter-spacing: 2px;
+    z-index: 2
+}
+
+.start-btn {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    width: 70%;
+    height: 40%; 
+    color: white;
+    cursor: pointer;
+    background-image: url(http://localhost/capstone3/images/icons/button.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.characters-container {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#arvi1-convo, #scientist-convo {
+    width: 40%;
+    height: 90%;
+}
+
+// Win modal Styles
+.game-over-modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.742);
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.win-container {
+    width: 400px;
+    height: 200px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: rgb(249, 158, 93);
+    border-radius: 20px;
+}
+
+.ok-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(http://localhost/capstone3/Images/Background/buttons.png);
+    background-size: 100% 100%;
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.lose-container {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: rgb(249, 158, 93);
+    border-radius: 20px;
+}
+
+.title-container {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lose-btn-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#try-yes-btn {
+    width: 40%;
+    font-size: 2rem;
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(114, 174, 23);
+    border-radius: 10px;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    
+}
+
+#try-no-btn {
+    width: 40%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+
+// .next-btn{
+//     width: 70%;
+//     height: 40%; 
+//     color: white;
+//     cursor: pointer;
+//     background-image: url(http://localhost/capstone3/images/icons/button.png);
+//     background-size: 100% 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 10px;
+//     letter-spacing: 2px;
+//     z-index: 2
+// }
+
+// .start-btn {
+//     display: none;
+//     z-index: -1;
+//     position: absolute;
+//     width: 70%;
+//     height: 40%; 
+//     color: white;
+//     cursor: pointer;
+//     background-image: url(http://localhost/capstone3/images/icons/button.png);
+//     background-size: 100% 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 10px;
+//     letter-spacing: 2px;
+// }

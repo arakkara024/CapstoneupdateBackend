@@ -1,0 +1,249 @@
+
+.close-btn-container-signup,.close-btn-email-verification{
+    background: url("http://localhost/CapstoneUpdate-main/Images/Icons/close-btn.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:20px; 
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-btn-success{
+    background: url("http://localhost/CapstoneUpdate-main/Images/Icons/close-btn.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:20px; 
+    top: 110px;
+    cursor: pointer;
+}
+
+.successContainer{
+    width: 400px !important;
+    margin-top: 50px;
+    padding: 16px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    background: url("http://localhost/CapstoneUpdate-main/Images/Background/error-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 70vh;
+}
+
+.error-container-sign-up,.error-container-email-verification{
+    width: 400px !important;
+    // margin-top: 24px;
+    padding: 16px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    background: url("http://localhost/CapstoneUpdate-main/Images/Background/error-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 30vh;
+
+    span{
+        color: Red;
+        font-weight: bold;
+    }
+}
+
+.nav-form{
+    line-height: 0.9;
+    text-align: center;
+    font-weight: bold;
+}
+
+.error-container{
+    padding-top: 32px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+
+    span{
+        color: Red;
+        font-weight: bold;
+    }
+}
+
+.background-body-container{
+    background: url("http://localhost/CapstoneUpdate-main/Images/Background/form-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-body-container-not-found{
+    background: url("http://localhost/CapstoneUpdate-main/Images/Background/404.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+// Phone Container
+.phone-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:$ney-black;
+}
+
+.phone{
+    height: 50px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 10px;
+    animation: rotate 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+          transform: rotate(0deg)
+      }
+      50% {
+          transform: rotate(-90deg)
+      }
+      100% {
+          transform: rotate(-90deg)
+      }
+}
+
+
+@media only screen and (max-device-width: 992px) and (orientation: landscape) {
+    .phone-container{
+      display: none !important;
+    }
+}
+
+
+// Visibility Hide on Mobile
+.ney-hide-for-mobile {
+    @include breakpoint-down(large-laptop) {
+        display: none !important;
+    }
+}
+  
+// Visibility Hide on Desktop
+.ney-hide-for-desktop {
+    @include breakpoint-up(large-laptop) {
+        display: none !important;
+    }
+}
+
+// Visibility Hide on Tablet
+.ney-hide-for-tablet{
+    @include breakpoint-up(medium-tablet) {
+        display: none !important;
+    }
+}
+
+// Visibility Hide on Tablet
+.ney-hide-for-mobile-tablet{
+    @include breakpoint-down(medium-tablet) {
+        display: none !important;
+    }
+}
+
+// Hide and Show
+.neyHideCssJs{
+    display: none !important;
+}
+
+.neyShowCssJs{
+    display: block;
+}
+
+// Width
+.ney-w-25{
+    width: 25% !important;
+}
+
+.ney-w-50{
+    width: 50% !important;
+}
+
+.ney-w-75{
+    width: 75% !important;
+}
+
+.ney-w-100{
+    width: 100% !important;
+}
+
+.ney-parent-container{ 
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+  
+.ney-child-container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+// Column Grid
+.ney-w-8-33{
+    width: 8.33%;
+}
+
+.ney-w-16-66{
+    width: 16.66%;
+}
+
+.ney-w-25{
+    width: 25%;
+}
+
+.ney-w-33-33{
+    width: 33.33%;
+}
+
+.ney-w-41-66{
+    width: 41.66%;
+}
+
+.ney-w-50{
+    width: 50%;
+}
+
+.ney-w-58-33{
+    width: 58.33%;
+}
+
+.ney-w-66-66{
+    width: 66.66%;
+}
+
+.ney-w-75{
+    width: 75%;
+}
+
+.ney-w-83-33{
+    width: 83.33%;
+}
+
+.ney-w-91-66{
+    width: 91.66%;
+}
+
+.ney-w-100{
+    width: 100%;
+}
+
+

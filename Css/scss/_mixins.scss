@@ -1,0 +1,165 @@
+                                 /* 576px */
+   @media only screen and (min-width: 36em){  /* Small devices (portrait tablets and large phones)*/
+   }
+                                 /* 768px */
+   @media only screen and (min-width: 48em){ /* Medium devices (landscape tablets) */
+      // Menu
+      .menu-img-play-settings-container{
+         img{
+            max-width: 500px !important;
+         }
+   }
+   }
+                                 /* 992px */
+   @media only screen and (min-width: 62em){ /* Large devices (laptops/desktops) */
+      .phone-container{
+         display: none !important;
+      }
+
+      // Form
+      .ney-form{
+         width: 550px !important;
+         height: 400px !important;
+      }
+
+      .ney-form-input-container{
+         margin-top: 10 !important;
+         width: 300px !important;
+      }
+
+      .title-container{
+         h4{
+            font-size: 30px !important;
+         }
+      }
+
+      .error-container{
+         font-size: 18px !important;
+      }
+
+      .btn-container{
+         margin:8px 0px;
+      }
+
+      .ney-form-input-text{
+         padding: 15px 20px !important;
+      }
+
+      .nav-form{
+         line-height: 1.6 !important;
+         a{
+            font-size: 18px !important;
+         }
+      }
+
+      .error-container-sign-up{
+         height: 12vh !important;
+         margin-top: -50px;
+      }
+
+      .error-container-email-verification{
+         height: 12vh !important;
+      }
+
+      .successContainer{
+         margin-top: 70px !important;
+         height: 30vh !important;
+      }
+
+      .close-btn-email-verification{
+         top: 10px !important;
+         right: 100px !important;
+      }
+
+      .close-btn-container-signup{
+         top: -40px !important;
+         right: 100px !important;
+      }
+
+      // Level Page
+      // Header Nav
+      .level-timer-container{
+         h4{
+            font-size: 36px;
+         }
+      }
+
+      // Battle Container
+      .level-character-container{
+         img{
+            height: 200px !important;
+         }
+      }
+
+
+      .level-ide,.level-out{
+         p{
+            font-size: 24px !important;
+         }
+      }
+
+      .level-container-option{
+         padding: 24px !important;
+         
+         button{
+            font-size: 24px !important;
+         }
+      }
+
+      .script{
+         font-size: 24px !important;
+         padding: 24px !important;
+      }
+
+      .next-btn,.start-btn{
+         font-size: 46px !important;
+      }
+
+      // Map
+      .map-level-1,.map-level-2,.map-level-3,.map-level-4,.map-level-5,.map-level-6{
+         width: 100px !important;
+      }
+
+      .map-btn{
+         height: 124px !important;
+         width: 124px !important;
+         font-size: 46px !important;
+   }
+
+   // Inventory
+   .inventory-avi-container, .inventory-powerup-items-container{
+         height: 100vh !important;
+   }
+
+   .inventory-avi-container{
+         padding: 150px 150px 10px 150px !important;
+   }
+
+   .inventory-powerup-items-container{
+         padding: 80px !important;
+   }
+
+   // Form 
+   .ney-form-input-child-container{
+         top: 6px !important;
+         font-size: 14px !important;
+   }
+
+   // 404
+   .file-not-found{
+      h2{
+         font-size: 80px !important;
+      }
+   }
+
+
+   }
+
+                                 /* 1200px */
+   @media only screen and (min-width: 75em){  /* Extra large devices (large laptops and desktops, 1200px and up) */
+
+   }
+                                 /* 1400px */
+   @media only screen and (min-width: 87.5em){ /* Tv */
+
+   }

@@ -1,0 +1,201 @@
+@import url('http://fonts.cdnfonts.com/css/cartoonist');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cartoonist', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* Styles for Body */
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Style for Wrapper */
+
+.wrapper {
+    display: none;
+}
+
+/* Portrait Notification Styles */
+
+.portrait-notification {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cp {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    top: 32%;
+    animation-name: cpAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes cpAnimation {
+    0%{
+        transform: rotate(0);
+    } 
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (min-width: 560px) and (orientation: landscape){
+
+    /* Hide Portrait Notification Div */
+
+    .portrait-notification{
+        display: none;
+    }
+
+    /* Styles for Body */
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Style for Wrapper */
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .loader-container {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: black; */
+    }
+
+    .arvi-container {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: black; */
+    }
+
+    .arvi-item-container {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arvi-cover {
+        position: absolute;
+        width: 25%;
+        height: 50%;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0px 5px 5px white;
+        transform: translateY(-110%);
+        animation-name: loading-animation;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+    }
+
+    .arvi {
+        width: 25%;
+        height: 80%;
+    }
+
+    .percent-container {
+        font-size: 2.5vw;
+        width: 100%;
+        height: 20%;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .percent-span {
+        font-size: 2.5vw;
+        font-family: sans-serif;
+        font-weight: bolder;
+    }
+
+    .lower-container {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: space-evenly;
+    }
+
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lower-loader-image {
+        width: 30%;
+    }
+
+    .tip-text {
+        font-size: 2.3vw;
+        color: black;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 1%;
+    }
+
+    .fadeIn-animation {
+        opacity: 1;
+    }
+
+    @keyframes loading-animation {
+        from {
+            transform: translateY(0%);
+        }
+
+        to {
+            transform: translateY(-100%);
+        }
+    }
+
+
+}

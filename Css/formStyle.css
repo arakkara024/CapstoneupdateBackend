@@ -1,0 +1,369 @@
+@import url('http://fonts.cdnfonts.com/css/cartoonist');
+
+
+/* Media Query for minimum width 320px landscape */
+
+@media screen and (min-width: 560px) and (orientation: landscape){
+
+    /* Hide Portrait Notification Div */
+
+    .portrait-notification {
+        display: none;
+    }
+
+    /* Style for Wrapper */
+
+    .log-in-wrapper {
+        width: 100%;
+        height: 100vh;
+        background-image: url(/Images/Background/log-in-bg.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* This is temporary (display: flex) */
+        display: none;  
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* Style for Error Message Container */
+
+    .error-message-container {
+        /* display: none; Enable this*/
+        width: 350px;
+        display: none;
+        top: 10px;
+        position: absolute;
+        text-align: center;
+        padding: 5px;
+        color: rgb(173, 28, 28);
+        border-radius: 10px;
+        border: rgba(194, 39, 39, 0.861) 2px solid;
+        background-color: rgba(249, 249, 249, 0.885);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.426), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    /* Style for Background Container */
+
+    .log-in-bg-container {
+        /* width: 80%;
+        height: 95%; */
+        width: 456px;
+        height: 304px;
+        background-image: url(/Images/Background/log-in.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 150 left and right */
+        padding: 60px 100px 46px;
+    }
+
+    /* Style for Form Container */
+
+    .form-container {
+        /* width: 100%;
+        height: 100%; */
+        min-width: 273.625px; 
+        min-height: 190.016px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    /* Style for Slide Button Container */
+
+    .slide-btn-container {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 20%;
+        /* border 1 */
+        border: white 1px solid; 
+        border-radius: 10px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    .relay {
+        width: 50%;
+        height: 100%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        border-radius: 10px;
+        background-color: #1877f2;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .relay-btn-active {
+        transform: translateX(100%);
+        background-color: #42b72a;
+    }
+
+    .login-div, .register-div {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        -webkit-text-stroke: 0.5px black;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+
+    /* Style for Dual Form */
+
+    .dual-form {
+        width: 200%;
+        height: 80%;
+        display: flex;  
+        overflow: hidden;
+        transform: translateX(0%);
+        transition: transform 0.6s ease-in-out;
+    }
+
+    /* Class Added to Dual Form if the Register button is Clicked */
+
+    .register-form-active{
+        transform: translateX(-50%);
+    }
+
+    /* Same Style For Log-in and Register Form */
+
+    .log-in-form, .register-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+        padding: 10px;
+    }
+
+    /* Style for all the Inputs in Log-in Form */
+
+    .log-in-form .log-input {
+        width: 100%;
+        font-family: sans-serif;
+        font-size: .8rem;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        margin: 2px 0 2px;
+    }
+
+    /* Additional Style for Button input in Log-in Form */
+
+    #log-in-btn {
+        font-size: 1rem;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: white;
+        background-color: #1877f2;
+        text-align: center;
+        letter-spacing: 5px;
+        /* -webkit-text-stroke: 0.5px black; */
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+    }
+
+    #log-in-btn:hover {
+        background-color: rgb(241, 241, 241);
+        color: #1877f2;
+    }
+
+    .forgot {
+        margin: 0 auto;
+        margin-top: 5px;
+        color: black;
+        -webkit-text-stroke: 0.5px white;
+        font-weight: bold;
+        transition: text-decoration 2s ease-in-out;
+        
+    }
+
+    .forgot:hover {
+        text-decoration: underline;
+    }
+
+    /* Style for all the Inputs in Register Form */
+
+    .register-form .reg-input {
+        width: 100%;
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    #register-btn {
+        color: white;
+        font-weight: bold;
+        background-color: #42b72a;
+        font-size: 1rem;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+    }
+
+    #register-btn:hover {
+        color: #42b72a;
+        background-color: rgb(241, 241, 241);
+    }
+
+}
+
+/* Media Query for minimum width 568px landscape */
+
+@media screen and (min-width: 760px) and (orientation: landscape){
+
+    /* Styles For Portrait Notification */
+
+    .portrait-notification {
+        display: none;
+    }
+
+    .log-in-bg-container {
+        width: 600px;
+        height: 400px;
+        background-image: url(/Images/Background/log-in.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 115px 46px;
+    }
+
+    .login-div, .register-div {
+        font-size: 1.5rem;
+    }
+
+    /* Styles For Background Container */
+
+    .background-container {
+        width: 500px;
+        height: 380px;
+        padding: 80px 95px 46px;
+    }
+
+    /* Styles For Error Message Div */
+
+    .error-message-container {
+        width: 400px;
+        top: 30px;
+        display: none;
+        position: absolute;
+        display: none;
+    }
+
+    /* Styles For Form Container*/
+
+    .form-container {
+        width: 100%; 
+        height: 100%;
+    }
+
+    /* Styles For Log-in Form Inputs*/
+
+    .log-in-form .log-input {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    /* Additional Styles For Log-in Button */
+
+    #log-in-btn {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+
+    /* Styles For Register Form Inputs*/
+
+    .register-form .reg-input {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    #register-btn {
+        color: white;
+        font-weight: bold;
+        background-color: #42b72a;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+}
+
+@media screen and (min-width: 1025px) and (orientation: landscape){
+
+    /* Styles For Portrait Notification */
+
+    .portrait-notification {
+        display: none;
+    }
+
+    /* Styles For Background Container */
+
+    .background-container {
+        width: 600px;
+        height: 450px;
+        padding: 90px 115px 50px;
+    }
+
+     /* Styles For Form Container*/
+
+    .form-container {
+        width: 100%; 
+        height: 100%;
+    }
+
+    /* Styles For Log-in and Register Upper Buttons (Buttons for Switching in 2 Forms) */
+
+    .login-div, .register-div {
+        font-size: 1.3rem;
+    }
+
+     /* Styles For Log-in Form Inputs*/
+
+    .log-in-form .log-input {
+        font-size: 1rem;
+        padding: 18px;
+    }
+
+     /* Additional Styles For Log-in Button */
+
+    #log-in-btn {
+        font-size: 1.3rem;
+        padding: 15px;
+        text-align: center;
+    }
+
+     /* Styles For Register Form Inputs*/
+
+    .register-form .reg-input {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    /* Additional Styles For register Button */
+
+    #register-btn {
+        color: white;
+        font-weight: bold;
+        background-color: #42b72a;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
+

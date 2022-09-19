@@ -1,0 +1,90 @@
+// Flex
+.ney-flex{
+    display: flex;
+
+    // Single
+    &-ai-c{ // Two div align horizontaly
+        align-items: center;
+    }
+    
+    &-jc-c{ // Div center verticaly 
+        justify-content: center;
+    }
+
+    &-jc-sb{ // Div Seperate Long
+        justify-content: space-between;
+    }
+
+    &-jc-se{ // Div Seperate Even
+        justify-content: space-evenly;
+    }
+
+    &-jc-e{
+        justify-content: end;
+    }
+
+    &-fd-c{
+        flex-direction: column;
+    }
+
+    &-fw-w{
+        flex-wrap: wrap;
+    }
+
+    &-fd-cr{
+        flex-direction: column-reverse;
+    }
+
+    &-fd-rr{
+        flex-direction: row-reverse;
+    }
+
+    // Combo
+    &-ai-c-jc-c{ // Center Div
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-ai-c-jc-sb{ // 
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-ai-c-jc-se{ // 
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    &-fd-c-ai-c{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-fd-c--c{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-fd-c-ai-c-jc-c{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-fd-c-ai-c-jc-e{
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+
+   &-fd-c-ai-e{
+    flex-direction: column;
+    align-items: end;
+   }
+
+
+   &-ai-c-jc-sa{
+    align-items: center;
+    justify-content: space-around;
+   }
+}

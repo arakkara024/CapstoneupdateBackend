@@ -1,0 +1,106 @@
+// Story Board Container
+// Grid Container
+.grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    height: 100vh;
+    grid-template-areas: 'item1 item2 item3'
+                         'item4 item4 item3'
+                         'item5 item6 item7';
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.item1 {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+    grid-area: item1;
+    background: url(http://localhost/capstone3/images/story/1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.item2 {
+    opacity: 0;
+    transition: opacity 500ms ease-in 1s;
+    grid-area: item2;
+    background: url(http://localhost/capstone3/images/story/2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.item3 {
+    opacity: 0;
+    transition: opacity 500ms ease-in 2s;
+    grid-area: item3;
+    background: url(http://localhost/capstone3/images/story/3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.item4 {
+    opacity: 0;
+    transition: opacity 500ms ease-in 3s;
+    grid-area: item4;
+    background: url(http://localhost/capstone3/images/story/4.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.item5 {
+    opacity: 0;
+    transition: opacity 500ms ease-in 4s;
+    grid-area: item5;
+    background: url(http://localhost/capstone3/images/story/5.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.item6{
+    opacity: 0;
+    transition: opacity 500ms ease-in 5s;
+    grid-area: item6;
+    background: url(http://localhost/capstone3/images/story/6.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.item7{
+    opacity: 0;
+    transition: opacity 500ms ease-in 6s;
+    grid-area: item7;
+    background: url(http://localhost/capstone3/images/story/7.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.animateGridItem{
+    opacity: 1 !important;
+}
+
+.storyboard-container{
+    background: url(http://localhost/capstone3/images/interace-bg/menu-title-no-char.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.index-continue-btn-container{
+    opacity: 0;
+    transition: opacity 500ms ease-in 7s;
+    position: absolute;
+    right: 30px;    
+    bottom: 20px;
+}
+
+.index-main{
+    background-color: $ney-black;
+    position: absolute;
+    inset: 0;
+}

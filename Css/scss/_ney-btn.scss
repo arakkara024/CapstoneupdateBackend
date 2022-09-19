@@ -1,0 +1,24 @@
+// Btn Background Image
+.ney-btn{
+    background-image: url("http://localhost/Capstone3//images/icons/button.png");
+    background-size: 100% 100%;
+    padding: 10px 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 28px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+.ney-btn-small{
+    background-image: url(/images/icons/button.png);
+    background-size: 100% 100%;
+    padding: 10px 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 28px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,148 @@
+.movement {
+    animation-name: characterMovements;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes characterMovements {
+
+    50% {
+        transform: translateY(5%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* Arvi Attack Animation */
+
+.attackAnimation {
+    animation-name: attackAnimation;
+    animation-duration: 300ms;
+    animation-delay: 300ms;
+    animation-iteration-count: 3;
+}
+
+@keyframes attackAnimation {
+
+    0% {
+        transform: translateX(10%) rotate(15deg);
+    }
+
+    75% {
+        transform: translateX(40%);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.enemyIsAttackAnimation {
+    animation-name: enemyIsAttackAnimation;
+    animation-duration: 300ms;
+    animation-delay: 300ms;
+    animation-iteration-count: 3;
+}
+
+@keyframes enemyIsAttackAnimation {
+
+    75% {
+        transform: translateX(80px) rotate(25deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+/* Enemy Attack Animation */
+
+.enemyAttackAnimation {
+    animation-name: enemyAttackAnimation;
+    animation-duration: 300ms;
+    animation-delay: 300ms;
+    animation-iteration-count: 3;
+}
+
+@keyframes enemyAttackAnimation {
+
+    0% {
+        transform: translateX(-10%) rotate(-15deg);
+    }
+
+    75% {
+        transform: translateX(-40%);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+
+.arviIsAttackAnimation {
+    animation-name: arviIsAttackAnimation;
+    animation-duration: 300ms;
+    animation-delay: 300ms;
+    animation-iteration-count: 3;
+}
+
+@keyframes arviIsAttackAnimation {
+
+    75% {
+        transform: translateX(-80px) rotate(-25deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.even-items {
+    animation-name: even-items-up;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes odd-items-down {
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.odd-items {
+    animation-name: odd-items-down;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes even-items-up {
+    50% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* Life Animation */
+/* 
+.reduced-arvi-life {
+   width: 75%;
+}
+
+.reduced-enemy-life {
+    width: 0%;
+} */
+
+
+
+
+
